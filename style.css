@@ -1,35 +1,40 @@
-html, div, .page, .header, body{
+/* Page reset */
+html, div, .page, .header, body, ul, .nav, .nav-web, .logo, .links, {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.nav{
-    margin: auto;
-    text-decoration: none;
-}
-.page{
-    margin: 0;
-    padding: 0;
-}
+/* Removing list styles for all ul tags */
 ul{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
+/* Laying out the page using padding */
 .nav, .header, .content, .footer{
-    padding: 0 20% 0 20%;
+    width: 980px;
+    margin: auto;
 }
+/* Styling out the heading */
 .header{
     background-color: gray;
 }
+/* Changing multiple classes to inline-block to line them up */
 .web-list-items, .content-list-items, .nav-web, .logo, .links, .search{
     display: inline-block;
 }
+/* Styling the top levelnavigation for the website */
 .nav-web{
     margin: 5px 0 5px 0;
+    height: 30px;
 }
 .nav-web-list{
     border-bottom: 1px solid lightgray;
+}
+.logo{
+    /* display: inline-block;
+    width: 100px; */
+}
+.logo-img{
+    width: 100px;
 }
 .web-list-items{
     border-right: 1px solid lightgray;
