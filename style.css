@@ -1,8 +1,9 @@
 /* Page reset */
-html, div, .page, .header, body, ul, .nav, .nav-web, .logo, .links, {
-    padding: 0;
-    margin: 0;
+html, div, .page, .header, body, ul, .nav, .nav-web, .logo, .links, a {
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 /* Removing list styles for all ul tags */
 ul{
@@ -10,36 +11,64 @@ ul{
 }
 /* Laying out the page using padding */
 .nav, .header, .content, .footer{
-    width: 980px;
     margin: auto;
+    padding: 0 20% 0 20%;
 }
 /* Styling out the heading */
 .header{
-    background-color: gray;
+    background-color: rgba(0,0,0,.08);
+    height: 260px;
 }
 /* Changing multiple classes to inline-block to line them up */
 .web-list-items, .content-list-items, .nav-web, .logo, .links, .search{
     display: inline-block;
 }
-/* Styling the top levelnavigation for the website */
+/* Styling the top level navigation for the website */
+.nav{
+    height: 100px;
+}
 .nav-web{
-    margin: 5px 0 5px 0;
-    height: 30px;
+    display: flex;
 }
 .nav-web-list{
     border-bottom: 1px solid lightgray;
+    padding: 9px 0 10px 0;
+    margin: 0 0 0 15px;
+    font-size: .9rem;
 }
 .logo-img{
-    width: 100px;
+    width: 93px;
 }
 .web-list-items{
     border-right: 1px solid lightgray;
     text-align: center;
-    padding: 0 5px 0 5px;
+    padding: 0 7px 0 7px;
+}
+.web-list-items:last-child{
+    border: none;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
 }
 .search{
-    background: lightgray;
+    background: rgba(0,0,0,.08);
     color: white;
     border: none;
-    padding: 5px 0 0 0;
+    width: 140px;
+    height: 0px;
+}
+#input{
+    border-bottom: 1px solid black;
+    padding: 18px 0 18px 15px;
+    font-size: .8em;
+}
+.fas{
+    position: relative;
+    top: 8px;
+    right: 20px;
+    font-size: 1.2rem;
 }
