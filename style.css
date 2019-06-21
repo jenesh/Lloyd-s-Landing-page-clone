@@ -4,6 +4,7 @@ html, div, .page, .header, body, ul, .nav, .nav-web, .logo, .links, a {
     margin: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 /* Removing list styles for all ul tags */
 ul{
@@ -16,7 +17,7 @@ ul{
 }
 /* Styling out the heading */
 .header{
-    background-color: rgba(0,0,0,.08);
+    background-color: rgba(0,0,0,.05);
     height: 260px;
 }
 /* Changing multiple classes to inline-block to line them up */
@@ -34,7 +35,7 @@ ul{
     border-bottom: 1px solid lightgray;
     padding: 9px 0 10px 0;
     margin: 0 0 0 15px;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 .logo-img{
     width: 93px;
@@ -42,10 +43,11 @@ ul{
 .web-list-items{
     border-right: 1px solid lightgray;
     text-align: center;
-    padding: 0 7px 0 7px;
+    padding: 0 8px 0 8px;
 }
 .web-list-items:last-child{
     border: none;
+    padding-right: 14.2px;
 }
 a{
     color: black;
@@ -58,17 +60,46 @@ a:hover{
     background: rgba(0,0,0,.08);
     color: white;
     border: none;
-    width: 140px;
+    width: 130px;
     height: 0px;
 }
 #input{
     border-bottom: 1px solid black;
-    padding: 18px 0 18px 15px;
+    padding: 18px 3px 18px 15px;
     font-size: .8em;
 }
 .fas{
     position: relative;
     top: 8px;
-    right: 20px;
+    right: 9px;
     font-size: 1.2rem;
+}
+.nav-content{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.content-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.content-list-items{
+    border-top: 1px solid black;
+    font-size: 14px;
+    color: white;
+    background: rgb(10, 26, 91);
+    border-right: 1px solid white;
+    text-align: center;
+    width: 200px;
+    padding: 10px 0 10px 0;
+    font-weight: 900;
+}
+.active{
+    background: rgba(0,0,0,.10);
+    color: rgb(10, 26, 91);
+    font-weight: 900;
 }
