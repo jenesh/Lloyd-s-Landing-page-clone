@@ -10,6 +10,10 @@ html, div, .page, .header, body, ul, .nav, .nav-web, .logo, .links, a {
 ul{
     list-style-type: none;
 }
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
 /* Laying out the page using padding */
 .nav, .header, .content, .footer{
     margin: auto;
@@ -102,4 +106,32 @@ a:hover{
     background: rgba(0,0,0,.10);
     color: rgb(10, 26, 91);
     font-weight: 900;
+}
+.page-directory, .page-directory>a{
+    color:rgba(0,0,0,.4)
+}
+.page-directory{
+    padding: 30px 0 5px 0;
+}
+.page-title{
+    padding: 0;
+}
+.page-title>p{
+    margin-top: -8px;
+    font-size: .93rem;
+}
+.page-title>p>a{
+    color: blue;
+    position: relative;
+    left: 27px;
+    top: 20px;
+}
+.page-title>p>a>i{
+    font-size: .9rem;
+    color: rgb(54, 94, 162);
+    top: 0;
+}
+.content{
+    padding-top: 15px;
+    color: red;
 }
